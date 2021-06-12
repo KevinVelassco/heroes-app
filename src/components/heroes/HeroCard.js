@@ -22,7 +22,7 @@ export const HeroCard = ({
                     </p>
                 </div>
                 <div className="card-footer d-grid">
-                    <Link to={`./hero/${id}`} className="btn btn-primary btn-sm">detalle</Link>
+                    <Link to={`/hero/${id}`} className="btn btn-primary btn-sm">detalle</Link>
                 </div>
             </div>
         </div>
