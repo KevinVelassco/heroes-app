@@ -1,5 +1,5 @@
 import React, { useMemo } from 'react';
-import { Redirect, useParams, Link } from 'react-router-dom';
+import { Redirect, useParams } from 'react-router-dom';
 import { getHeroById } from '../../selectors/getHeroById';
 
 export const HeroScreen = ({ history }) => {
@@ -28,7 +28,7 @@ export const HeroScreen = ({ history }) => {
         <div className="card mb-3">
             <div className="row g-0">
                 <div className="col-md-5 h-100">
-                    <img src={`../assets/heroes/${heroesId}.jpg`} classNameName="card-img-top" alt={superhero} />
+                    <img src={`../assets/heroes/${heroesId}.jpg`} className="card-img-top" alt={superhero} />
                 </div>
                 <div className="col-md-7">
                     <div className="card-body">
