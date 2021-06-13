@@ -8,7 +8,7 @@ export const SearchScreen = ({ history }) => {
 
     const location = useLocation();
 
-    const { q = '' } = queryString.parse(location.search);
+    const { q = '' } = useMemo(() => queryString.parse(location.search), [location.search]);
 
     const [search, setSearch] = useState(q);
 
