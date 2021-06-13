@@ -7,14 +7,15 @@ export const LoginScreen = ({ history }) => {
     const { dispatch } = useContext(AuthContext);
 
     const handleLogin = () => {
-        //history.push('/');
+
+        const pathName = localStorage.getItem('page-hero-pathname') || '/';
 
         dispatch({
             type: types.login,
             payload: { name: 'Kevin' }
         });
 
-        history.replace('/');
+        history.replace(pathName);
     }
 
     return (
